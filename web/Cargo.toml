@@ -1,0 +1,23 @@
+[package]
+name = "web"
+version = "0.1.0"
+edition = "2021"
+authors = ["Andrés Castiglia <acastiglia@gmail.com>"]
+
+[dependencies]
+js-sys = "~0.3"
+log = "~0.4"
+regex = "~1.5"
+serde = { version = "~1.0", features = ["derive"] }
+serde_json = "~1.0"
+uuid = { version = "~1.1", features = [ "v4", "js" ] }
+wasm-bindgen = { version = "~0.2", features = ["serde-serialize"] }
+wasm-logger = "~0.2"
+web-sys = { version = "~0.3", features = [ "BinaryType", "ErrorEvent", "MessageEvent", "WebSocket" ] }
+yew = "~0.19"
+
+[profile.release]
+panic = 'abort'
+codegen-units = 1
+opt-level = 'z'
+lto = true
