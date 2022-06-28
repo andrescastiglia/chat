@@ -22,7 +22,7 @@ public class ChatController : ControllerBase
         _commandService = commandService;
     }
 
-    [HttpGet("/ws")]
+    [HttpGet("/chat")]
     public async Task Get()
     {
         if (HttpContext.WebSockets.IsWebSocketRequest)

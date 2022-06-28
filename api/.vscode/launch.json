@@ -7,7 +7,10 @@
             "request": "launch",
             "preLaunchTask": "build",
             "program": "${workspaceFolder}/bin/Debug/net6.0/api.dll",
-            "args": [],
+            "args": [
+                "--urls",
+                "http://0.0.0.0:9090"
+            ],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
             "serverReadyAction": {
@@ -15,7 +18,15 @@
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
             },
             "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "STOCK_URI": "https://stooq.com/q/l/?s=#code#&f=sd2t2ohlcv&h&e=csv",
+                "RABBIT_HOST": "mq",
+                "RABBIT_PORT": "5672",
+                "RABBIT_USERNAME": "admin",
+                "RABBIT_PASSWORD": "test12",
+                "RABBIT_EXCHANGE": "exchange.stooq",
+                "RABBIT_QUEUE": "queue.stooq",
+                "RABBIT_VHOST": "/"
             },
         },
         {

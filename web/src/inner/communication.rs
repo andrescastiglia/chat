@@ -4,7 +4,7 @@ use wasm_bindgen::{prelude::Closure, JsCast, JsValue};
 use web_sys::{MessageEvent, WebSocket};
 use yew::html::Scope;
 
-const SERVER_URL: &str = "ws://localhost:5023/ws";
+const SERVER_URL: &str = "ws://127.0.0.1:9090/chat";
 
 pub struct Communication {
     ws: WebSocket,

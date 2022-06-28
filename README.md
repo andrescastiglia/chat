@@ -27,6 +27,7 @@ UML
     Web --> Recruiter: greeting
 @enduml
 ```
+[sequence](./docs/uml_sequence.png)
 
 ## API
 
@@ -41,8 +42,12 @@ UML
 
 ### Prerequisites
 1. Install Rust `brew install rustup`
-1. Install Compiler `rustup install webasm32-unknown-unknown`
-1. Install Yew `cargo install yew`
+1. Install Compiler `rustup target add wasm32-unknown-unknown`
+1. Install Yew `cargo install trunk`
 
 ### Run
-1. Execute `trunk --release --open`
+1. Execute `trunk serve --open`
+
+### Docker
+1. Execute `docker-compose up --build`
+1. Open `http://localhost:8080/`
