@@ -1,13 +1,12 @@
-using System;
-using System.Net.Http;
 using System.Text;
-using System.Threading.Tasks;
 using Api.Model;
 using Api.Services;
 using Microsoft.Extensions.Logging;
 using NSubstitute;
 using NUnit.Framework;
 using RabbitMQ.Client;
+
+namespace api_ut;
 
 public class StooqServiceTests
 {

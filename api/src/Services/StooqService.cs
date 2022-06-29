@@ -4,6 +4,8 @@ using Api.Services;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 
+namespace Api.Services;
+
 public interface IStooqService
 {
 }

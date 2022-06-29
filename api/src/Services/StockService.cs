@@ -1,6 +1,8 @@
 using System.Text;
 using RabbitMQ.Client;
 
+namespace Api.Services;
+
 public interface IStockService
 {
     void Enqueue(string code);

@@ -1,7 +1,10 @@
 using System.Text;
+using Api.Services;
 using NSubstitute;
 using NUnit.Framework;
 using RabbitMQ.Client;
+
+namespace api_ut;
 
 public class StockServiceTests
 {

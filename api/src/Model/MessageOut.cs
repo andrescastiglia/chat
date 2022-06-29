@@ -1,5 +1,3 @@
-using System;
-
 namespace Api.Model;
 
 public class MessageOut
