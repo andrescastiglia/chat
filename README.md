@@ -35,6 +35,9 @@ UML
 1. Install .Net `brew install dotnet`
 1. Build `dotnet build`
 
+## Test
+1. Run `dotnet test`
+
 ### Run
 1. Execute `dotnet run`
 
@@ -51,3 +54,6 @@ UML
 ### Docker
 1. Execute `docker-compose up --build`
 1. Open `http://localhost:8080/`
+
+### RabbitMQ Console
+1. Open `http://localhost:15672/` (admin/test12)

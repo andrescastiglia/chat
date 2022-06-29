@@ -8,9 +8,9 @@ public interface ISecurityService
 
 public class SecurityService : ISecurityService
 {
-    private IDictionary<string, string> _userCollection;
-    private ReaderWriterLock _locker;
-    private const int LOCK_TIMEOUT_MILLISECS = 3000;
+    protected IDictionary<string, string> _userCollection;
+    protected ReaderWriterLock _locker;
+    protected const int LOCK_TIMEOUT_MILLISECS = 3000;
 
     public SecurityService()
     {

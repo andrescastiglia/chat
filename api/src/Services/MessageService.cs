@@ -15,8 +15,8 @@ public interface IMessageService
 
 public class MessageService: IMessageService
 {
+    protected IDictionary<string, WebSocket> _socketCollection;
     private readonly ILogger<MessageService> _logger;
-    private IDictionary<string, WebSocket> _socketCollection;
     private ReaderWriterLock _locker;
     private const int LOCK_TIMEOUT_MILLISECS = 3000;
     private ISecurityService _securityService;

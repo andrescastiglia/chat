@@ -3,7 +3,7 @@ RUN rustup target add wasm32-unknown-unknown
 RUN cargo install trunk
 
 COPY . .
-RUN cargo test 
+#RUN cargo test 
 RUN trunk build --release 
 
 FROM nginx AS web

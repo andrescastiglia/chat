@@ -6,7 +6,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/net6.0/api.dll",
+            "program": "${workspaceFolder}/src/bin/Debug/net6.0/api.dll",
             "args": [
                 "--urls",
                 "http://0.0.0.0:9090"
