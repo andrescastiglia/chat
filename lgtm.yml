@@ -1,0 +1,6 @@
+extraction:
+  csharp:
+    index:
+      solution: api/api.sln
+      dotnet:
+        version: 6.0.202
