@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /usr/local/src
 COPY . .
-RUN dotnet test ./tests/tests.csproj
+RUN dotnet test ./tests/tests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
 RUN dotnet build ./src/api.csproj --configuration Release
 
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS api
